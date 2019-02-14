@@ -41,5 +41,5 @@ def draw():
             last = difference
         i += 1
     save('pi_color.png')    
-    #exit()
+    exit()
     
