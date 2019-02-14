@@ -20,4 +20,4 @@ def draw():
         line(0,i, cWidth, i)
         i += 1
     save('pi_color_lines.png')    
-   # exit()
+    exit()
