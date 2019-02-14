@@ -2,15 +2,15 @@ import argparse
 
 
 def NumbersInText(number_file, text_file, output_name):
-    number_f = open("Numbers/{}".format(number_file), "r")
+    number_f = open("{}".format(number_file), "r")
     number = number_f.read()
     number = number.replace('.', '')
 
-    text_f = open("Text/{}".format(text_file), "r", encoding="utf8")
+    text_f = open("{}".format(text_file), "r", encoding="utf8")
     text = text_f.read()
     text_words = text.split()
 
-    output_f = open('Output/{}'.format(output_name), 'w')
+    output_f = open('{}'.format(output_name), 'w')
 
     text_len = len(text_words)
     count = 0
