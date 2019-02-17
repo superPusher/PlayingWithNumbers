@@ -27,7 +27,7 @@ def NumbersInText(number_file, text_file, output_name):
     output_f.close()
 
 
-def main():
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-n", "--number",
                         help="Path to the file containing the number")
@@ -38,5 +38,3 @@ def main():
     args = parser.parse_args()
     NumbersInText(args.number, args.text, args.output)
 
-
-main()
